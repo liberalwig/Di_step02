@@ -4,9 +4,9 @@ public class BluePrinter implements Printer{
     @Override
     public void print(String msg) {
 
-        System.out.println("----- ColorPrinter Start -----");
+        System.out.println("----- BluePrinter Start -----");
         System.out.println(msg);
-        System.out.println("----- ColorPrinter End -----");
+        System.out.println("----- BluePrinter End -----");
 
     }
 }

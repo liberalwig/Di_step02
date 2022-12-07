@@ -1,4 +1,4 @@
-package com.mono.di.entitiy;
+package com.mono.di.entity;
 
 import com.mono.di.ui.Printer;
 
@@ -46,11 +46,11 @@ public class Hello {
             printer.print(String.format("Message : %s, %s", name,message));
     }
 
-    @Override
-    public String toString() {
-        return "Hello{" +
-                "printer=" + printer +
-                ", name='" + name + '\'' +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Hello{" +
+//                "printer=" + printer +
+//                ", name='" + name + '\'' +
+//                '}';
+//    }
 }

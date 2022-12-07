@@ -15,7 +15,7 @@ class PrinterTest {
         Printer printer = new BluePrinter();
     //    Hello hello = new Hello(printer, "Blue");
       //  hello.print("aaa");
-        printer.prints("Hello");
+        printer.print("Hello");
     }
 
     @Test
@@ -25,7 +25,7 @@ class PrinterTest {
         printers.add(new BluePrinter());
         printers.add(new ColorPrinter());
         printers.add(new MonoPrinter());
-        printers.forEach(p -> p.prints("Hello"));
+        printers.forEach(p -> p.print("Hello"));
     }
 
 }

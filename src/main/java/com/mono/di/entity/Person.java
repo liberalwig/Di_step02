@@ -1,4 +1,4 @@
-package com.mono.di.entitiy;
+package com.mono.di.entity;
 
 public class Person implements Comparable<Person> {
 
@@ -39,6 +39,6 @@ public class Person implements Comparable<Person> {
 
     @Override
     public int compareTo(Person o) {
-        return 0;
+        return (this.age - o.getAge())*1;
     }
 }
