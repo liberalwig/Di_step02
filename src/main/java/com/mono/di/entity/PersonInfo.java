@@ -10,14 +10,14 @@ public class PersonInfo {
 
     private Printer printer;
     private List<String> names;
-    private List<String> persons;
+    private List<Person> persons;
     private Map<String, Integer> ages;
     private Set<String> emails;
 
     public PersonInfo() {
     }
 
-    public PersonInfo(Printer printer, List<String> names, List<String> persons, Map<String, Integer> ages, Set<String> emails) {
+    public PersonInfo(Printer printer, List<String> names, List<Person> persons, Map<String, Integer> ages, Set<String> emails) {
         this.printer = printer;
         this.names = names;
         this.persons = persons;
@@ -41,11 +41,11 @@ public class PersonInfo {
         this.names = names;
     }
 
-    public List<String> getPersons() {
+    public List<Person> getPersons() {
         return persons;
     }
 
-    public void setPersons(List<String> persons) {
+    public void setPersons(List<Person> persons) {
         this.persons = persons;
     }
 
@@ -64,6 +64,7 @@ public class PersonInfo {
     public void setEmails(Set<String> emails) {
         this.emails = emails;
     }
+
 
     @Override
     public String toString() {

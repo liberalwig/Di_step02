@@ -34,4 +34,3 @@ public class S4_jUnitBeforeAllTest {
         hello.print("hello...");
     }
 }
-
