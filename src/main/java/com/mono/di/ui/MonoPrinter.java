@@ -2,7 +2,7 @@ package com.mono.di.ui;
 
 public class MonoPrinter implements Printer{
     @Override
-    public void prints(String msg) {
+    public void print(String msg) {
 
         System.out.println("----- ColorPrinter Start -----");
         System.out.println(msg);
