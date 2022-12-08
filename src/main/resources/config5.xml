@@ -4,10 +4,18 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="printer" class="com.mono.di.ui.ColorPrinter"/>
+    <bean id="printer" class="com.mono.di.ui.ColorPrinter"/>  <!-- ColorPrinter printer = new ColorPrinter();-->
 
-    <bean id="personInfo" class="com.mono.di.entity.PersonInfo">
-        <property name="printer" ref="printer"></property>
+
+    <bean id="personInfo" class="com.mono.di.entity.PersonInfo"> <!-- PersonInfo personInfo = new PersonInfo();-->
+        <!--Printer printer-->
+        <property name="printer" ref="printer"></property> <!-- personInfo.setPrinter(printer);-->
+
+          <!--List<String> name1 = new ArrayList<>();
+            name1.add("Spring");
+            name1.add("IoC");
+            name1.add("DI");
+            personInfo.setNames(name1);  -->
 
         <!--List<String> names-->
         <property name="names">
@@ -36,7 +44,7 @@
             </list>
         </property>
 
-        <!--Map<String, Integer> ages-->
+        <!--Map<String, Integer> ages--> <!--Map을 Printer printer의 자바 변수 선언 안 하고 바로 밑에 밸류값에 값 넣어주느라 ref생략-->
         <property name="ages">
             <map>
                 <entry key="Kim" value="10"></entry>

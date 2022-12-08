@@ -18,7 +18,7 @@ public class Hello {
     }
 
     public void print(String message){
-//        System.out.println(this.name);
+       // System.out.println(this.name);
         if (this.name == null)
             printer.print(message);
         else

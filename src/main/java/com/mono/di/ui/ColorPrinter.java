@@ -1,7 +1,6 @@
 package com.mono.di.ui;
 
 public class ColorPrinter implements Printer{
-
     @Override
     public void print(String msg) {
 

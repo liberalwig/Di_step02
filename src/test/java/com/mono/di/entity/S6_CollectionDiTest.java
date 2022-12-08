@@ -24,6 +24,9 @@ public class S6_CollectionDiTest {
         System.out.println("======================");
         Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
 
+        // String[] qq = {"a" , "b" , "c"};
+        // <bean id="qq" Class >
+        // <property value={"a" , "b" , "c">;
 
         System.out.println("컨테이너생성");
         System.out.println("Before 객체 : " + this);
