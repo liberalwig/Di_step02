@@ -11,7 +11,6 @@ public class AssignmentS6 {
 
         PersonInfo personInfo = new PersonInfo();
         personInfo.setPrinter(printer);
-        personInfo.setPrinter(printer);
 
         List<String> nameList = new ArrayList<>();
         nameList.add("Spring");
@@ -55,6 +54,11 @@ public class AssignmentS6 {
         emailSet.add("eng@naver.com");
         emailSet.add("eng@naver.com");
         personInfo.setEmails(emailSet);
+
+        Hello hello = new Hello();
+        // 오답: personInfo.setPrinter(hello);
+        hello.setPrinter(printer);
+
     }
 }
 //

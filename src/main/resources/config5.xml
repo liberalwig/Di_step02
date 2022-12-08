@@ -62,4 +62,9 @@
             </set>
         </property>
     </bean>
+
+    <bean id="hello" class="com.mono.di.entity.Hello">
+        <property name="printer" ref="printer" />
+    </bean>
+
 </beans>
