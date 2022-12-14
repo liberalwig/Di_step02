@@ -43,13 +43,13 @@ public class AssignmentS6 {
         personInfo.setPersons(personList);
 
 
-        Map<String, Integer> ageMap = new HashMap<>();
+        Map<String, Integer> ageMap = new HashMap<>(); // autoBoxing: primitive를 자동으로 객체형으로 변환
         ageMap.put("Kim", 10);
         ageMap.put("Lee", 20);
         ageMap.put("Ahn", 30);
         personInfo.setAges(ageMap);
 
-        Set<String> emailSet = new HashSet<>();
+        Set<String> emailSet = new HashSet<>(); //set: 중복값 불허. equal이라는 hashCode를 오버라이딩해줘서 중복체크.
         emailSet.add("kor@naver.com");
         emailSet.add("eng@naver.com");
         emailSet.add("eng@naver.com");
