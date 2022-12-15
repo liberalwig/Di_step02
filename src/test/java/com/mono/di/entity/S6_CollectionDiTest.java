@@ -18,7 +18,7 @@ public class S6_CollectionDiTest {
     public void before() {
         //IoC 컨테이너를 생성
         //1.ApplicationContext 객체 생성
-        context = new ClassPathXmlApplicationContext("classpath:config5.xml");
+        context = new ClassPathXmlApplicationContext("classpath:config5.xml"); // 메타 정보
         personInfo = context.getBean(PersonInfo.class);
 
         System.out.println("======================");
@@ -42,7 +42,7 @@ public class S6_CollectionDiTest {
         System.out.println("------------------------");
 
         List<String> list = personInfo.getNames();
-        list.forEach(System.out::println);
+        list.forEach(System.out::println); // list.forEach(a->System.out.println(a)); 이것과 같음
 
         System.out.println("------------------------");
 
@@ -109,7 +109,7 @@ public class S6_CollectionDiTest {
 
         System.out.println("------------------------");
 
-        /* enhenced for */
+        /* enhanced for */
         for (String s : hs) {
             System.out.println(s);
         }

@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class S5_SingletonTest {
@@ -29,6 +30,8 @@ public class S5_SingletonTest {
 
         Assertions.assertSame(hello1, hello2);
         System.out.println("hello1: " + hello1 + ", hello2" + hello2);
+
+        System.out.println("hello1 : " + System.identityHashCode(hello1) + "\n hello2 : " + System.identityHashCode(hello2));
     }
 
 
@@ -44,5 +47,8 @@ public class S5_SingletonTest {
 
         Assertions.assertNotSame(hello3, hello4);
         System.out.println("hello3: " + hello3 + ", hello4" + hello4);
+
+        System.out.println("hello3 : " + System.identityHashCode(hello3) + "\n hello4 : " + System.identityHashCode(hello4));
+
     }
 }

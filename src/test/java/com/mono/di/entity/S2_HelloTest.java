@@ -12,9 +12,9 @@ import java.util.Arrays;
 class S2_HelloTest {
     @DisplayName("Container를 사용한 객체주입(Di)")
     @ParameterizedTest
-    @ValueSource(strings = {"config1.xml","config2.xml","config3.xml","config3-1.xml","config4.xml"})
+    @ValueSource(strings = {"config1.xml","config2.xml","config3.xml","config4.xml"})
     public void springContainerTest(String resourceFileName){
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:" + resourceFileName); // 좌 인터, 우 구현
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:" + resourceFileName); // 좌 인터, 우 구현. ApplicationContext 는 BeanFactory 를 상속함
 
         String[] beanName = ctx.getBeanDefinitionNames();
         Arrays.stream(beanName).iterator().forEachRemaining(System.out::println);
